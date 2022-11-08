@@ -13,7 +13,7 @@ if product_type == "investment":
     if interest_type == "simple":
         total_saved = deposit * (1 + (interest_rate / 100) * invest_years)
         total_interest = total_saved - deposit
-        print(f"Your total amount saved is £{total_saved:.2f}, which includes interest of £{total_interest:.2f}.")
+        print(f"Your total amount saved is £{total_saved:.2f}, which includes interest of £{total_interest:.2f}.") # :.2f is the best thing I have learned to round up easily
 
     elif interest_type == "compound":
         interest_corrected = interest_rate / 100
@@ -31,10 +31,5 @@ elif product_type == "bond":
 This is based on the value of the house being £{house_value}, your interest rate of {interest_rate}%, 
 and with monthly repayments spread out over {repay_months} months""")
 
-# The first part was straight forward for me using previous materials
-# However the formula for bond took me a bit to get my head around:
-# It wasn't clear that the interest had to be divided by 100 and then again by 12
-# It also took me  a quick check on stack overflow to know ^ meant **, which may have been mentioned and I missed it
-# Where would I use ^ in future, as it said it would not work with int or float
-# I added the .strip() because if the user is like me, they automatically hit space bar for some strange reason lol
-# Is there a way to take an input, like house price, and ignore a "," if someone says 315,000 rather than 315000?
+# Some code written to a challenge given on my current Bootcamp
+# f strings are so much neater than concatination 
