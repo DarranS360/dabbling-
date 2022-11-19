@@ -1,0 +1,124 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Registration Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label for="first-name" id="name-label">Enter Your First Name: <input id="name" name="first-name" type="text" required placeholder="First name here..."/></label>
+        <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required placeholder="Last name here..."/></label>
+        <label for="email" id="email-label">Enter Your Email: <input id="email" type="email" required placeholder="Email here..."/></label>
+        <label for="number" id="number-label">Create a New Number: <input id="number" name="number" type="number" min="1" max="100"required placeholder="New number here..."/></label>
+      </fieldset>
+      <fieldset>
+        <label for="coding-dabbler"><input id="coding-dabbler" type="radio" name="coder-type" class="inline" value="code-dabbler"/> Code Dabbler</label>
+        <label for="coding-expert"><input id="coding-expert" type="radio" name="coder-type" class="inline" value="coder-expert"/> Coding Expert</label>
+        <label for="terms-and-conditions" name="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" value="accept_terms"/> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        </label>
+        <label for="terms-and-conditions" name="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" value="confirm-register"/> I would confirm I would like to register</a>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="code-sample">Upload a sample file of your code: <input id="code-sample" type="file" name="file" /></label>
+        <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
+        <label for="referrer">How cool is coding?
+          <select id="dropdown" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">So cool!</option>
+            <option value="2">The best, obviously!</option>
+            <option value="3">It's fun fun fun!</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+fieldset:last-of-type {
+  border-bottom: none;
+}
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+a{
+  color: #dfdfe2;
+}
+
+
+** end of undefined **
+
