@@ -1,0 +1,139 @@
+div
+{
+    border-radius: 10px;
+    }
+
+#header
+{
+    position: fixed;
+    width: 100%;
+    background-color: #49306b;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    justify-self: flex-start;
+    align-items: center;
+    top: 0;
+    margin-bottom: 10px;
+    overflow-y: hidden;
+}
+
+#name {
+    float:left;
+	margin-left: 20px;
+	padding-bottom: 10px;
+	font-size: 16px;
+	font-family: Helvetica, sans-serif;
+	color: #ffffff;
+}
+
+#email{
+    float:right;
+    margin-right: 20px;
+	padding-bottom: 10px;
+	font-size: 16px;
+	font-family: Helvetica, sans-serif;
+	color: #ffffff;
+}
+
+table {
+    border-spacing: 15px 0;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(253, 254, 255);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    overflow-y: scroll;
+}
+.full {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    background-color: #ffffff;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding-top: 50px;
+    font-family: Helvetica, sans-serif;
+}
+
+.left {
+    position: initial;
+    background-color: #635380;
+    padding: 30px;
+    color: #ffffff;
+    width: 550px;
+}
+
+.right {
+    position: initial;
+    background-color: #ace4aa;
+    padding: 30px;
+
+}
+.Contact, .Skills, .Language, .Hobbies, .title,
+.Summary, .Experience, .Education, .project {
+    margin-bottom: 30px;
+}
+
+.Experience ul{
+    margin-bottom: 10px;
+}
+
+.Experience h3,
+.Education h3,
+.Summary h3{
+    padding-bottom: 5px;
+}
+
+img {
+    border-radius: 10px;
+    height: 400px;
+    width: 350px;
+}
+
+.Contact{
+    padding-top: 20px;
+}
+
+.portfolio{
+color: #ffffff;
+}
+
+.Summary p{
+    padding-bottom: 15px;
+}
+
+.Contact h3,
+.Hobbies h3,
+.Skills h3,
+.Language h3,
+.Other Skills h3,
+.Hobbies h3{
+    padding-bottom: 5px;
+}
+
+footer{
+    width: 100%;
+    background-color: #49306b;
+    border-radius: 10px;
+    display: flex;
+    justify-content: left;
+    padding-left: 20px;
+}
